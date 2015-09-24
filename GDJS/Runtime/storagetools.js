@@ -127,7 +127,7 @@ gdjs.evtTools.storage.deleteElementFromJSONFile = function(filename, element) {
 };
 
 gdjs.evtTools.storage.writeNumberInJSONFile = function(filename, element, val) {
-	var notPermanentlyLoaded = false;
+	var notPermanentlyLoaded = true;
 	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
 		notPermanentlyLoaded = true;
 		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
@@ -150,7 +150,7 @@ gdjs.evtTools.storage.writeNumberInJSONFile = function(filename, element, val) {
 };
 
 gdjs.evtTools.storage.writeStringInJSONFile = function(filename, element, str) {
-	var notPermanentlyLoaded = false;
+	var notPermanentlyLoaded = true;
 	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
 		notPermanentlyLoaded = true;
 		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
@@ -173,7 +173,7 @@ gdjs.evtTools.storage.writeStringInJSONFile = function(filename, element, str) {
 };
 
 gdjs.evtTools.storage.readNumberFromJSONFile = function(filename, element, runtimeScene, variable) {
-	var notPermanentlyLoaded = false;
+	var notPermanentlyLoaded = true;
 	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
 		notPermanentlyLoaded = true;
 		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
@@ -199,7 +199,7 @@ gdjs.evtTools.storage.readNumberFromJSONFile = function(filename, element, runti
 };
 
 gdjs.evtTools.storage.readStringFromJSONFile = function(filename, element, runtimeScene, variable) {
-	var notPermanentlyLoaded = false;
+	var notPermanentlyLoaded = true;
 	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
 		notPermanentlyLoaded = true;
 		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
